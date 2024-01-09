@@ -203,7 +203,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Block The Vote Web3 voting list',
     description: 'Web3 Voting system designed to create a fair place to vote on various items that pertain to the group.',
-    url: 'https://block-the-vote-front.vercel.app/',
+    url: 'https://project-steps.vercel.app/posts/block-the-vote/',
     image: porfolioImage3,
   },
   {
