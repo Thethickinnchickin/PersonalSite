@@ -196,7 +196,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Restaurant Review',
     description: 'Mock Yelp like review site using ejs and express.',
-    url: 'https://restaurant-review-bus9t1ipr-thethickinnchickin.vercel.app/restaurants',
+    url: 'https://project-steps.vercel.app/posts/restaurant-review',
     image: porfolioImage1,
   },
 
