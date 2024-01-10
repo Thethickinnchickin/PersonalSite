@@ -215,7 +215,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Browser Calculator',
     description: 'Calculator To do small arithmatic and also graph variable equations',
-    url: 'https://calculator-zeta-neon.vercel.app/',
+    url: 'https://project-steps.vercel.app/posts/calculator',
     image: porfolioImage2,
   },
   {
@@ -251,7 +251,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Chat Bot Made with AI',
     description: 'Chat bot made with OpenAI as a mock chat-gpt',
-    url: 'https://chatter-bot-next.vercel.app/',
+    url: 'https://project-steps.vercel.app/posts/ai-chatter-bot',
     image: porfolioImage4,
   },
   {
