@@ -225,8 +225,8 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
+    title: 'Goland Login System',
+    description: 'A Authentication system made with GoLang',
     url: 'https://reactresume.com',
     image: porfolioImage6,
   },
