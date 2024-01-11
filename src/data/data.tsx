@@ -226,8 +226,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Goland Login System',
-    description: 'A Authentication system made with GoLang',
-    url: 'https://reactresume.com',
+    description: 'Authentication system made with GoLang',
+    url: 'https://project-steps.vercel.app/posts/go-login',
     image: porfolioImage6,
   },
   // {
