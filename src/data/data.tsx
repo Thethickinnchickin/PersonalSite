@@ -19,7 +19,7 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
@@ -236,12 +236,12 @@ export const portfolioItems: PortfolioItem[] = [
   //   url: 'https://reactresume.com',
   //   image: porfolioImage7,
   // },
-  // {
-  //   title: 'Project title 8',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage8,
-  // },
+  {
+    title: 'Springboard Task Manager with Login System',
+    description: 'Springboard Login System: A secure authentication and task management project using Spring Boot and JWT tokens.',
+    url: 'https://project-steps.vercel.app/posts/springboard-task-manager-with-login-system',
+    image: porfolioImage8,
+  },
   {
     title: 'Trash Day App UI/UX Case Study',
     description: 'The case study here shows my process to design an app that will allow for those who need help taking out their trash to have someone come at a specific time and date and take it out for them.',
