@@ -45,9 +45,11 @@ const ContactForm: FC = memo(() => {
           // Reset the form fields
           setData(defaultData);
   
-          // Navigate to #contact and refresh the section
-          window.location.href = '#contact';
-          window.location.reload(); // Refreshes the section
+          // Show a success message
+          window.alert('Your email has been sent successfully!');
+  
+          // After the user clicks OK, reload the page
+          window.location.reload();
         } else {
           console.error('Failed to send email');
         }
