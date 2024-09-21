@@ -11,6 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       auth: {
         user: 'mattssitemail@gmail.com', // Your email address
         pass: process.env.NEXT_PUBLIC_APP_PASS, // Your app-specific password
+
       },
     });
 
@@ -18,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       from: `"${name}" <mattssitemail@gmail.com>`, // Sender's name with your email
       to: 'mattreileydeveloper@gmail.com', // Recipient's email
       subject: `Personal Site Email from ${name}`,
-      text: message,
+      text: message + "\n   -From " + email,
       replyTo: email, // Set the reply-to address to the user's email
     };
 
