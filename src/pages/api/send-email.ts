@@ -4,6 +4,9 @@ import nodemailer from 'nodemailer';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const {name, email, message} = req.body;
+    console.log(email)
+    console.log(name)
+    console.log(message + "\n   -From " + email)
 
     // Set up the transporter using Gmail
     const transporter = nodemailer.createTransport({
