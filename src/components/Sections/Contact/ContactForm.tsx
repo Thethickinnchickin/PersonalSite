@@ -41,7 +41,13 @@ const ContactForm: FC = memo(() => {
 
         if (response.ok) {
           console.log('Email sent successfully!');
+
+          // Reset the form fields
+          setData(defaultData);
+  
+          // Navigate to #contact and refresh the section
           window.location.href = '#contact';
+          window.location.reload(); // Refreshes the section
         } else {
           console.error('Failed to send email');
         }
@@ -49,7 +55,7 @@ const ContactForm: FC = memo(() => {
         console.error('Error: ', error);
       }
     },
-    [data],
+    [data, defaultData],
   );
 
   const inputClasses =

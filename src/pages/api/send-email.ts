@@ -4,16 +4,13 @@ import nodemailer from 'nodemailer';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const {name, email, message} = req.body;
-    console.log(email)
-    console.log(name)
-    console.log(message + "\n   -From " + email)
 
     // Set up the transporter using Gmail
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: 'mattssitemail@gmail.com', // Your email address
-        pass: process.env.NEXT_PUBLIC_APP_PASS, // Your app-specific password
+        pass: process.env.NEXT_PUBLIC_APP_PASS || 'vktz whud oyat uphd', // Your app-specific password
 
       },
     });
