@@ -41,11 +41,7 @@ const ContactForm: FC = memo(() => {
 
         if (response.ok) {
           console.log('Email sent successfully!');
-          setData({
-            name: '',
-            email: '',
-            message: ''
-          });
+          window.location.href = '#contact';
         } else {
           console.error('Failed to send email');
         }
