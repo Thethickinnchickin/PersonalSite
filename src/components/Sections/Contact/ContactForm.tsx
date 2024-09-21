@@ -21,9 +21,7 @@ const ContactForm: FC = memo(() => {
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
       const {name, value} = event.target;
-
       const fieldData: Partial<FormData> = {[name]: value};
-
       setData({...data, ...fieldData});
     },
     [data],
@@ -32,10 +30,23 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+      try {
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          console.log('Email sent successfully!');
+        } else {
+          console.error('Failed to send email');
+        }
+      } catch (error) {
+        console.error('Error: ', error);
+      }
     },
     [data],
   );
@@ -45,7 +56,14 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+      <input
+        className={inputClasses}
+        name="name"
+        onChange={onChange}
+        placeholder="Name"
+        required
+        type="text"
+      />
       <input
         autoComplete="email"
         className={inputClasses}
