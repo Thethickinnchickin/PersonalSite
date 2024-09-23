@@ -84,7 +84,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/AIGame.pdf',
+      href: '/assets/Resume%20Full%20Stack%20Developer.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
