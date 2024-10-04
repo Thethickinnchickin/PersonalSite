@@ -19,7 +19,7 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 //import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-//import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
@@ -205,24 +205,33 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://project-steps.vercel.app/posts/calculator',
     image: porfolioImage2,
   },
-  
   {
-    title: 'Golang Login System',
-    description: 'Authentication system made with GoLang',
-    url: 'https://project-steps.vercel.app/posts/go-login',
-    image: porfolioImage6,
+    title: 'Building a Scalable Inventory Management System with NestJS and Kubernetes',
+    description: 'I built a scalable inventory management system using NestJS for the backend and deployed it on Kubernetes. The project features a RESTful API, integrates with MongoDB, and utilizes Docker for containerization, showcasing my cloud-native development skills.',
+    url: 'https://project-steps.vercel.app/posts/building-a-scalable-inventory-management-system-with-nestjs-and-kubernetes',
+    image: porfolioImage8,
   },
+
+  
+
   {
     title: 'Block The Vote Web3 voting list',
     description: 'Web3 Voting system designed to create a fair place to vote on various items that pertain to the group.',
     url: 'https://project-steps.vercel.app/posts/block-the-vote/',
     image: porfolioImage3,
   },
+  
   {
     title: 'Restaurant Review',
     description: 'Mock Yelp like review site using ejs and express.',
     url: 'https://project-steps.vercel.app/posts/restaurant-review',
     image: porfolioImage1,
+  },
+  {
+    title: 'Golang Login System',
+    description: 'Authentication system made with GoLang',
+    url: 'https://project-steps.vercel.app/posts/go-login',
+    image: porfolioImage6,
   },
 
 
@@ -235,12 +244,6 @@ export const portfolioItems: PortfolioItem[] = [
 
 
 
-  // {
-  //   title: 'Project title 7',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage7,
-  // },
 
   {
     title: 'Trash Day App UI/UX Case Study',
