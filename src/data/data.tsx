@@ -16,7 +16,7 @@ import profilepic from '../images/New.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-//import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
@@ -204,6 +204,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Calculator To do small arithmatic and also graph variable equations',
     url: 'https://project-steps.vercel.app/posts/calculator',
     image: porfolioImage2,
+  },
+  {
+    title: 'Task Management System',
+    description: 'A comprehensive task management application built using Flask for the backend and React for the frontend, featuring secure authentication and robust task tracking.',
+    url: 'https://project-steps.vercel.app/posts/python-full-stack-task-management-application',
+    image: porfolioImage5,
   },
   {
     title: 'Building a Scalable Inventory Management System with NestJS and Kubernetes',
