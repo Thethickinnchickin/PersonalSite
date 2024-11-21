@@ -18,7 +18,7 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
@@ -200,11 +200,12 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage4,
   },
   {
-    title: 'Browser Calculator',
-    description: 'Calculator To do small arithmatic and also graph variable equations',
-    url: 'https://project-steps.vercel.app/posts/calculator',
-    image: porfolioImage2,
+    title: 'Full-Stack Flask Web Application with Redis and Nginx',
+    description: 'A Flask web app with Redis for session management and Nginx as a reverse proxy, featuring a calculator for arithmetic and graphing variable equations.',
+    url: 'https://project-steps.vercel.app/posts/full-stack-flask-web-application-with-redis-and-nginx',
+    image: porfolioImage7,
   },
+
   {
     title: 'Task Management System',
     description: 'A comprehensive task management application built using Flask for the backend and React for the frontend, featuring secure authentication and robust task tracking.',
@@ -218,7 +219,6 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage8,
   },
 
-  
 
   {
     title: 'Block The Vote Web3 voting list',
@@ -227,6 +227,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage3,
   },
   
+
   {
     title: 'Restaurant Review',
     description: 'Mock Yelp like review site using ejs and express.',
