@@ -13,7 +13,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import profilepic from '../images/New.png';
-//import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
@@ -70,15 +70,34 @@ export const heroData: Hero = {
   name: `I'm Matthew Reiley.`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Bay Area based <strong className="text-stone-100">Full Stack Web Developer</strong>,
+      <div className="terminal-loader relative">
+        <div className="terminal-header">
+          <div className="terminal-title">Status</div>
+          <div className="terminal-controls">
+            <div className="control close"></div>
+            <div className="control minimize"></div>
+            <div className="control maximize"></div>
+          </div>
+        </div>
+        
+        <div className="absolute left-0">
+          <span className='left-0 absolute top-6' id='spam'>{'>>'}</span>
+          <div className='text'>Welcome to my website...</div>
+          
+        </div>
+        
+      </div>
+
+
+      <p className="prose-sm text-dark-200 sm:prose-base lg:prose-lg">
+        I'm a Bay Area based <strong className="text-dark-100">Full Stack Web Developer</strong>,
         helping build a modern, mobile-first, domain
         registrar and site builder.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me coaching and playing <strong className="text-stone-100">Baseball</strong>,
-        plucking my <strong className="text-stone-100">Guitar</strong>, or exploring the always beautiful{' '}
-        <strong className="text-stone-100">Bay Area</strong>.
+      <p className="prose-sm text-dark-200 sm:prose-base lg:prose-lg">
+        In my free time time, you can catch me coaching and playing <strong className="text-dark-100">Baseball</strong>,
+        plucking my <strong className="text-dark-100">Guitar</strong>, or exploring the always beautiful{' '}
+        <strong className="text-dark-100">Bay Area</strong>.
       </p>
     </>
   ),
@@ -109,7 +128,7 @@ export const aboutData: About = {
   Have an interesting project? Let's talk.`,
   aboutItems: [
     {label: 'Location', text: 'San Carlos, CA', Icon: MapIcon},
-    {label: 'Age', text: '25', Icon: CalendarIcon},
+    {label: 'Age', text: '26', Icon: CalendarIcon},
     {label: 'Interests', text: 'Baseball, Flying Planes', Icon: SparklesIcon},
     {label: 'Study', text: 'San Jose State University', Icon: AcademicCapIcon},
   ],
@@ -162,11 +181,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Swift',
-        level: 4,
+        level: 6,
       },
       {
         name: 'Flutter',
-        level: 3,
+        level: 5,
       },
     ],
   },
@@ -200,11 +219,12 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage4,
   },
   {
-    title: 'Full-Stack Flask Web Application with Redis and Nginx',
-    description: 'A Flask web app with Redis for session management and Nginx as a reverse proxy, featuring a calculator for arithmetic and graphing variable equations.',
-    url: 'https://project-steps.vercel.app/posts/full-stack-flask-web-application-with-redis-and-nginx',
-    image: porfolioImage7,
+    title: 'Block The Vote Web3 voting list',
+    description: 'Web3 Voting system designed to create a fair place to vote on various items that pertain to the group.',
+    url: 'https://project-steps.vercel.app/posts/block-the-vote/',
+    image: porfolioImage2,
   },
+
 
   {
     title: 'Task Management System',
@@ -225,6 +245,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Web3 Voting system designed to create a fair place to vote on various items that pertain to the group.',
     url: 'https://project-steps.vercel.app/posts/block-the-vote/',
     image: porfolioImage3,
+  },
+  {
+    title: 'Full-Stack Flask Web Application with Redis and Nginx',
+    description: 'A Flask web app with Redis for session management and Nginx as a reverse proxy, featuring a calculator for arithmetic and graphing variable equations.',
+    url: 'https://project-steps.vercel.app/posts/full-stack-flask-web-application-with-redis-and-nginx',
+    image: porfolioImage7,
   },
   
 
@@ -274,8 +300,8 @@ export const portfolioItems: PortfolioItem[] = [
 export const education: TimelineItem[] = [
   {
     date: '2023',
-    location: 'San Jose State University',
-    title: "Bachelor's Degree",
+    location: 'San Jose State University - Computer Science',
+    title: "Bachelor's of Science",
     content: <p>My computer science degree provided me with a strong theoretical foundation, proficiency in programming languages, practical problem-solving skills, database management expertise,
        and effective teamwork and communication abilities, preparing me for diverse challenges in the field.</p>,
   }

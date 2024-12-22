@@ -75,6 +75,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
           <Bars3BottomRightIcon className="h-8 w-8 text-white" />
           <span className="sr-only">Open sidebar</span>
         </button>
+        
         <Transition.Root as={Fragment} show={isOpen}>
           <Dialog as="div" className="fixed inset-0 z-40 flex sm:hidden" onClose={toggleOpen}>
             <Transition.Child
@@ -96,7 +97,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full">
               <div className="relative w-4/5 bg-stone-800">
-                <nav className="mt-5 flex flex-col gap-y-2 px-2">
+                <nav className="mt-5 flex flex-col gap-y-2 px-2">        
                   {navSections.map(section => (
                     <NavItem
                       activeClass={activeClass}
