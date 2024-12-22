@@ -219,9 +219,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage4,
   },
   {
-    title: 'Block The Vote Web3 voting list',
-    description: 'Web3 Voting system designed to create a fair place to vote on various items that pertain to the group.',
-    url: 'https://project-steps.vercel.app/posts/block-the-vote/',
+    title: 'News Summarization Web App',
+    description: 'A tool designed to simplify the process of consuming news. It reduces lengthy news articles into concise summaries, saving users time while ensuring they stay informed about critical events.',
+    url: 'https://project-steps.vercel.app/posts/news-summarization-web-app',
     image: porfolioImage2,
   },
 
