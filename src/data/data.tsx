@@ -12,6 +12,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
+import testimonialImage from '../images/nature.jpg';
 import profilepic from '../images/New.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -24,7 +25,6 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import porfolioImage1 from '../images/portfolio/restaurant-review.png';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -122,7 +122,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm Matthew Reiley, but you can call me Matt.
-  Born and raised in the Bay Area, I have been honing in my skills as a web developer from designing databases to building frontend designs. I have done it all.
+  Born and raised in the Bay Area, I have been honing my skills as a web developer from designing databases to building frontend designs. I have done it all.
   For the past 7 years, I have been honing my skills in programming and specifically web development. Beginning with making simple games like Tetris using JavaScript, all the way to creating fully functional e-commerce sites with top-notch security.
   My goal is to make user-friendly websites that provide pain-free experiences.
   Have an interesting project? Let's talk.`,
