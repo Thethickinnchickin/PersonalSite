@@ -224,8 +224,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://project-steps.vercel.app/posts/news-summarization-web-app',
     image: porfolioImage2,
   },
-
-
   {
     title: 'Task Management System',
     description: 'A comprehensive task management application built using Flask for the backend and React for the frontend, featuring secure authentication and robust task tracking.',
@@ -238,8 +236,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://project-steps.vercel.app/posts/building-a-scalable-inventory-management-system-with-nestjs-and-kubernetes',
     image: porfolioImage8,
   },
-
-
   {
     title: 'Block The Vote Web3 voting list',
     description: 'Web3 Voting system designed to create a fair place to vote on various items that pertain to the group.',
@@ -252,8 +248,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://project-steps.vercel.app/posts/full-stack-flask-web-application-with-redis-and-nginx',
     image: porfolioImage7,
   },
-  
-
   {
     title: 'Restaurant Review',
     description: 'Mock Yelp like review site using ejs and express.',
@@ -266,8 +260,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://project-steps.vercel.app/posts/go-login',
     image: porfolioImage6,
   },
-
-
   {
     title: 'Mobile Movie Snack Ordering App: Movie-GOers UI/UX Case Study',
     description: 'The case study here shows my process to create an app that would make ordering at the movies accessible and easy to understand to new users.',

@@ -424,9 +424,32 @@ th {
 }
 
 
+.about-background {
+  --sz: 16px;
+  --b1: #2b2b2b;   /* Charcoal black */
+  --b2: #1e1e1e;   /* Darker graphite */
+  --b3: #121212;   /* Deep black, great for backgrounds */
 
-
-
-
-
-
+  --r1: #0f8500;       /* Strong vivid green (your base) */
+  --r2: #0c6b00;       /* Slightly darker green for hover/focus states */
+  --r3: #084600;       /* Dark forest green, good for accents or shadows */
+  --ln: #08460080;     /* Semi-transparent forest green for borders/lines */
+  --ts: 50%/ calc(var(--sz) * 10) calc(var(--sz) * 5);
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow: hidden;
+  background: 
+  
+	linear-gradient(90deg, #fff0 0 25%, var(--ln) 0 calc(25% + 1px), #fff0 0 50%, var(--ln) 0 calc(50% + 1px), #fff0 0 75%, var(--ln) 0 calc(75% + 1px), #fff0 0 calc(100% - 1px), var(--ln) 0 100%) var(--ts), 
+  
+    conic-gradient(from 180deg at 25% 50%, var(--r2) 0 90deg, var(--b2) 0 180deg, #fff0 0 100%) var(--ts), 
+  
+    conic-gradient(from 180deg at 50% 50%, var(--b3) 0 45deg, #fff0 0 100%) var(--ts), 
+    conic-gradient(from 180deg at 50% 0, var(--r3) 0 45deg, var(--b3) 0 90deg, #fff0 0 100%) var(--ts), 
+  
+    conic-gradient(from 135deg at 75% 50%, var(--b1) 0 45deg, #fff0 0 100%) var(--ts), 
+    conic-gradient(from 90deg at 75% 0, var(--b1) 0 45deg, var(--r1) 0 90deg, #fff0 0 100%) var(--ts), 
+	
+    linear-gradient(180deg, var(--r2) 0 50%, var(--b2) 0 100% ) var(--ts);
+}
