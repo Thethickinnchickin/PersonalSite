@@ -24,6 +24,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
 import porfolioImage1 from '../images/portfolio/restaurant-review.png';
 import {
   About,
@@ -267,6 +268,12 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage11,
   },
 
+  {
+    title: 'MatchCraft: AI-Powered Resume & Job Matching Web App',
+    description: 'MatchCraft is a full-stack web application that analyzes your resume against a job description to calculate a match score, highlight matched and missing keywords, and generate a tailored AI-powered cover letter to improve your application.',
+    url: 'https://match-craft-delta.vercel.app/',
+    image: porfolioImage12,
+  },
 
 
 
