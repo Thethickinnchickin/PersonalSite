@@ -213,6 +213,12 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+    {
+    title: 'MatchCraft: AI-Powered Resume & Job Matching Web App',
+    description: 'MatchCraft is a full-stack web application that analyzes your resume against a job description to calculate a match score, highlight matched and missing keywords, and generate a tailored AI-powered cover letter to improve your application.',
+    url: 'https://match-craft-delta.vercel.app/',
+    image: porfolioImage12,
+  },
   {
     title: 'Inventory Management System',
     description: 'A system to make sure inventory is being properly tracked and has meaningful display data using Nestjs as a backend and Nextjs as a frontend',
@@ -268,12 +274,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage11,
   },
 
-  {
-    title: 'MatchCraft: AI-Powered Resume & Job Matching Web App',
-    description: 'MatchCraft is a full-stack web application that analyzes your resume against a job description to calculate a match score, highlight matched and missing keywords, and generate a tailored AI-powered cover letter to improve your application.',
-    url: 'https://match-craft-delta.vercel.app/',
-    image: porfolioImage12,
-  },
+
 
 
 
