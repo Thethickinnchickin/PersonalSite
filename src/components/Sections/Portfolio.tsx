@@ -25,6 +25,15 @@ const Portfolio: FC = memo(() => {
         Your browser does not support the video tag.
       </video>
 
+            {/* brackets overlay */}
+      <div
+        className="absolute inset-0 z-10 portfolio-border"
+        style={{
+          '--bg': '#fff',       // color of the brackets
+          '--corner': '8px',    // thickness of the border
+        } as React.CSSProperties}
+      ></div>
+
       
 
       <div className="flex flex-col gap-y-8">
