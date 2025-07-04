@@ -462,9 +462,9 @@ th {
 }
 
 .brackets {
-  border: 75px solid #CC5500;
-  border-image-source:
-    radial-gradient(closest-side, transparent 70%, var(--bg) 70%);
+  border: 75px solid transparent;
+  border-image-source: radial-gradient(closest-side, transparent 70%, #CC5500 70%);
   border-image-slice: 49%;
 }
+
 
