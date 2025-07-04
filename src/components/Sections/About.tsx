@@ -8,7 +8,7 @@ import Section from '../Layout/Section';
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
-    <Section className="relative brackets" sectionId={SectionId.About}>
+    <Section className="relative" sectionId={SectionId.About}>
             <video
               autoPlay
               className="absolute top-0 left-0 w-full h-full object-cover -z-10"
@@ -18,7 +18,15 @@ const About: FC = memo(() => {
             >
               <source src="/sf3.mp4" type="video/mp4" />
             </video>
-        <div className='brackets absolute inset-0 z-10'></div>
+       
+          {/* brackets overlay */}
+          <div
+            className="absolute inset-0 z-10 brackets"
+            style={{
+              '--bg': '#fff',       // color of the brackets
+              '--corner': '8px',    // thickness of the border
+            } as React.CSSProperties}
+          ></div>
 
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (

@@ -462,7 +462,8 @@ th {
 }
 
 .brackets {
-  border: var(--corner) solid;
+  border-width: var(--corner);
+  border-style: solid;
   border-image-source:
     conic-gradient(
       transparent 10%,
@@ -474,6 +475,6 @@ th {
       var(--bg)   90%,
       transparent 90%
     );
-  /* browsers have different thresholds for this, Safari needs at least 0.1% */
-  border-image-slice: 0.1%;
+  border-image-slice: 1;
+  pointer-events: none; /* optional: let clicks pass through */
 }
