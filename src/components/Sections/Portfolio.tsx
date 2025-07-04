@@ -13,6 +13,18 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="container-check sf-background" sectionId={SectionId.Portfolio}>
 
+            {/* Video Background */}
+      <video
+        autoPlay
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        loop
+        muted
+        playsInline
+      >
+        <source src="/src/images/sf.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold fs-3 text-white container-hero larger-text">Check Out Some Of My Work</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4 ">
