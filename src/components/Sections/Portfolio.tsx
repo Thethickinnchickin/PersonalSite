@@ -11,7 +11,7 @@ import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
   return (
-    <Section className="container-check portfolio-border" sectionId={SectionId.Portfolio}>
+    <Section className="container-check" sectionId={SectionId.Portfolio}>
 
             {/* Video Background */}
       <video
