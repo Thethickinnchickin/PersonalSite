@@ -462,19 +462,20 @@ th {
 }
 
 .brackets {
-  border-width: var(--corner);
-  border-style: solid;
+  border: var(--corner) solid;
   border-image-source:
-    conic-gradient(
-      transparent 10%,
-      var(--bg)   10%,
-      var(--bg)   40%,
-      transparent 40%,
-      transparent 60%,
-      var(--bg)   60%,
-      var(--bg)   90%,
-      transparent 90%
+    radial-gradient(
+      closest-side,
+      transparent 10%, var(--bg) 10%,
+      var(--bg) 20%, transparent 20%,
+      transparent 30%, var(--bg) 30%,
+      var(--bg) 40%, transparent 40%,
+      transparent 50%, var(--bg) 50%,
+      var(--bg) 60%, transparent 60%,
+      transparent 70%, var(--bg) 70%,
+      var(--bg) 80%, transparent 80%,
+      transparent 90%, var(--bg) 99.99%,
+      var(--bg) 100%, transparent 99.99%,
     );
-  border-image-slice: 1;
-  pointer-events: none; /* optional: let clicks pass through */
+  border-image-slice: 49%;
 }
