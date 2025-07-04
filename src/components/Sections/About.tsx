@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
+import './About.css';
 
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
@@ -8,7 +9,7 @@ import Section from '../Layout/Section';
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
-    <Section className="relative " sectionId={SectionId.About}>
+    <Section className="relative brackets" sectionId={SectionId.About}>
             <video
               autoPlay
               className="absolute top-0 left-0 w-full h-full object-cover -z-10"
@@ -18,12 +19,6 @@ const About: FC = memo(() => {
             >
               <source src="/sf3.mp4" type="video/mp4" />
             </video>
-
-  <div className="absolute inset-0 z-10 window-frame" id="frame">
-    <div id="border">
-      {/* Optional inner decorative elements */}
-    </div>
-  </div>
 
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
