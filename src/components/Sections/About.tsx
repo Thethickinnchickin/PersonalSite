@@ -27,7 +27,8 @@ const About: FC = memo(() => {
         <div className="absolute inset-x-0 top-1/2 h-1 bg-white/70 transform -translate-y-1/2"></div>
 
         {/* Outer border */}
-        <div className="absolute inset-0 border-8 border-white/80 rounded-md pointer-events-none"></div>
+        <div className="absolute inset-0 border-8 border-white/80 rounded-md pointer-events-none window-frame"></div>
+
       </div>
 
 
