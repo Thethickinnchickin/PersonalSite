@@ -10,27 +10,20 @@ const About: FC = memo(() => {
   return (
     <Section className="relative " sectionId={SectionId.About}>
 
-      <video
-        autoPlay
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-        loop
-        muted
-        playsInline
-      >
-        <source src="/sf3.mp4" type="video/mp4" />
-      </video>
-      {/* Window frame */}
-      <div className="absolute inset-0 z-[-10] flex flex-wrap">
-        {/* Vertical bars */}
-        <div className="absolute inset-y-0 left-1/2 w-1 bg-white/70 transform -translate-x-1/2"></div>
-        {/* Horizontal bars */}
-        <div className="absolute inset-x-0 top-1/2 h-1 bg-white/70 transform -translate-y-1/2"></div>
 
-        {/* Outer border */}
-        <div className="absolute inset-0 border-8 border-white/80 rounded-md pointer-events-none window-frame"></div>
-
-      </div>
-
+      <div id="frame">
+          <div id="border">
+            <video
+              autoPlay
+              className="absolute top-0 left-0 w-full h-full object-cover -z-10 img"
+              loop
+              muted
+              playsInline
+            >
+              <source src="/sf3.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
 
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
