@@ -456,4 +456,7 @@ th {
 
 .sf-background {
   background-image: url("./images/sf.jpg");
+  background-size: cover;         /* make the image cover the entire element */
+  background-position: center;   /* center the image */
+  background-repeat: no-repeat;  /* prevent tiling */
 }
