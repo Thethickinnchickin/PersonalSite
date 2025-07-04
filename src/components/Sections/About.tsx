@@ -8,7 +8,7 @@ import Section from '../Layout/Section';
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
-    <Section className="sf-background" sectionId={SectionId.About}>
+    <Section className="sf-background relative" sectionId={SectionId.About}>
       <video
         autoPlay
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
