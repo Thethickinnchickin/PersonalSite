@@ -462,8 +462,10 @@ th {
 }
 
 .brackets {
+  --corner: 20px; /* or 50px, etc. */
   border: var(--corner) solid;
   border-image-source:
     radial-gradient(closest-side, transparent 70%, var(--bg) 70%);
   border-image-slice: 49%;
 }
+
