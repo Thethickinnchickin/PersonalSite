@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
-import './About.css';
 
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
