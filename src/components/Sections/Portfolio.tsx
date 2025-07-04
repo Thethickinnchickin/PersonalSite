@@ -11,7 +11,7 @@ import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
   return (
-    <Section className="container-check moving-background" sectionId={SectionId.Portfolio}>
+    <Section className="container-check sf-background" sectionId={SectionId.Portfolio}>
 
       <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold fs-3 text-white container-hero larger-text">Check Out Some Of My Work</h2>
