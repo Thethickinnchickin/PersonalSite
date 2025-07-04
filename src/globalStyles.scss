@@ -462,21 +462,8 @@ th {
 }
 
 .brackets {
-  position: relative;
-  z-index: 10;
-  border-radius: 12px;
-  overflow: hidden;
+  border: var(--corner) solid;
+  border-image-source:
+    radial-gradient(closest-side, transparent 70%, var(--bg) 70%);
+  border-image-slice: 49%;
 }
-
-.brackets::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 4px solid #7d2424;
-  border-radius: 12px;
-  filter: blur(6px);
-  opacity: 0.4;
-  pointer-events: none;
-  z-index: -1;
-}
-
