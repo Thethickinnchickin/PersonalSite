@@ -8,7 +8,8 @@ import Section from '../Layout/Section';
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
-    <Section className="sf-background relative" sectionId={SectionId.About}>
+    <Section className="sf-background relative min-h-screen" sectionId={SectionId.About}>
+
       <video
         autoPlay
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
@@ -17,8 +18,8 @@ const About: FC = memo(() => {
         playsInline
       >
         <source src="/sf3.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
+
 
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
