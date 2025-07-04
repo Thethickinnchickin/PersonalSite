@@ -9,21 +9,21 @@ const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
     <Section className="relative " sectionId={SectionId.About}>
-
-
-      <div id="frame">
-          <div id="border">
             <video
               autoPlay
-              className="absolute top-0 left-0 w-full h-full object-cover -z-10 img"
+              className="absolute top-0 left-0 w-full h-full object-cover -z-10"
               loop
               muted
               playsInline
             >
               <source src="/sf3.mp4" type="video/mp4" />
             </video>
-          </div>
-        </div>
+
+  <div className="absolute inset-0 z-10 window-frame" id="frame">
+    <div id="border">
+      {/* Optional inner decorative elements */}
+    </div>
+  </div>
 
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
