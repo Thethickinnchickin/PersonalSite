@@ -462,13 +462,21 @@ th {
 }
 
 .brackets {
-  --corner: 1em;
-  --bg: white;
-  background-image:
-    radial-gradient(calc(2 * var(--corner)) at    0    0, transparent 50%, var(--bg) 50%, var(--bg) 99.99%, transparent 99.99%), /* Safari will break if we put 100% */
-    radial-gradient(calc(2 * var(--corner)) at    0 100%, transparent 50%, var(--bg) 50%, var(--bg) 99.99%, transparent 99.99%),
-    radial-gradient(calc(2 * var(--corner)) at 100% 100%, transparent 50%, var(--bg) 50%, var(--bg) 99.99%, transparent 99.99%),
-    radial-gradient(calc(2 * var(--corner)) at 100%    0, transparent 50%, var(--bg) 50%, var(--bg) 99.99%, transparent 99.99%),
-    linear-gradient(to  right, transparent var(--corner), var(--bg) var(--corner), var(--bg) calc(100% - var(--corner)), transparent calc(100% - var(--corner))),
-    linear-gradient(to bottom, transparent var(--corner), var(--bg) var(--corner), var(--bg) calc(100% - var(--corner)), transparent calc(100% - var(--corner)));
+  // border: var(--corner) solid;
+  // border-image-source:
+  //   radial-gradient(
+  //     closest-side,
+  //     transparent 10%, var(--bg) 10%,
+  //     var(--bg) 20%, transparent 20%,
+  //     transparent 30%, var(--bg) 30%,
+  //     var(--bg) 40%, transparent 40%,
+  //     transparent 50%, var(--bg) 50%,
+  //     var(--bg) 60%, transparent 60%,
+  //     transparent 70%, var(--bg) 70%,
+  //     var(--bg) 80%, transparent 80%,
+  //     transparent 90%, var(--bg) 99.99%,
+  //     var(--bg) 100%, transparent 99.99%,
+  //   );
+  // border-image-slice: 49%;
+  border: 23px groove #7d2424;
 }
