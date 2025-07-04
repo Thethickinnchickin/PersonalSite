@@ -216,7 +216,7 @@ export const portfolioItems: PortfolioItem[] = [
     {
     title: 'MatchCraft: AI-Powered Resume & Job Matching Web App',
     description: 'MatchCraft is a full-stack web application that analyzes your resume against a job description to calculate a match score, highlight matched and missing keywords, and generate a tailored AI-powered cover letter to improve your application.',
-    url: 'https://match-craft-delta.vercel.app/',
+    url: 'https://project-steps-pdam08uei-thethickinnchickins-projects.vercel.app/posts/matchcraft-ai-resume-and-job-description-optimizer',
     image: porfolioImage12,
   },
   {
