@@ -8,7 +8,7 @@ import Section from '../Layout/Section';
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
-    <Section className="relative min-h-screen" sectionId={SectionId.About}>
+    <Section className="relative " sectionId={SectionId.About}>
 
       <video
         autoPlay
