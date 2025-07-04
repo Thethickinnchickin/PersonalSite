@@ -19,6 +19,7 @@ const About: FC = memo(() => {
       >
         <source src="/sf3.mp4" type="video/mp4" />
       </video>
+      <div className="absolute inset-0 border-[10px] border-gradient-to-r from-green-600 to-blue-600 rounded-3xl z-[-10] pointer-events-none"></div>
 
 
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
