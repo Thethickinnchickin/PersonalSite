@@ -469,13 +469,9 @@ th {
 
 .portfolio-border {
   border: 100px solid transparent;
-  border-image-source: radial-gradient(closest-side, rgba(0,0,0,0.2) 60%, #080808 70%, #000 100%);
+  border-image-source: radial-gradient(closest-side, transparent 70%, #080808 70%);
   border-image-slice: 49%;
   pointer-events: none;
-
-  /* add shadow to simulate elevation */
+    /* add shadow to simulate elevation */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.1);
-
-  /* add some subtle transform for perspective */
-  transform: perspective(1000px) rotateX(1deg) rotateY(1deg);
 }
