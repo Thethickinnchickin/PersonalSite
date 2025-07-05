@@ -468,10 +468,12 @@ th {
 }
 
 .portfolio-border {
-  border: 100px solid transparent;
-  border-image-source: radial-gradient(closest-side, transparent 70%, #080808 70%);
-  border-image-slice: 49%;
+  border: 40px solid transparent;
+  border-image-source: url('./images/dark-wood.png');
+  border-image-slice: 30 fill;
+  border-image-repeat: round;
   pointer-events: none;
-    /* add shadow to simulate elevation */
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.1);
+
+  /* Optional: add a shadow for depth */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
