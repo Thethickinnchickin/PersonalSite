@@ -468,12 +468,10 @@ th {
 }
 
 .portfolio-border {
-  border: 100px solid;
-  border-image-source: url('./images/wood.jpg');
-  border-image-slice: 30 fill;
+  border: 100px solid transparent;
+  border-image-source: radial-gradient(closest-side, transparent 70%, #4A1C1A 70%);
+  border-image-slice: 49%;
   pointer-events: none;
-  border-image-repeat: round;
     /* add shadow to simulate elevation */
-  filter: brightness(0.9) contrast(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
- 
