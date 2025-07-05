@@ -16,7 +16,7 @@ const About: FC = memo(() => {
               muted
               playsInline
             >
-              <source src="/sf4.mp4" type="video/mp4" />
+              <source src="/sf3.mp4" type="video/mp4" />
             </video>
        
           {/* brackets overlay */}
