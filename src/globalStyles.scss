@@ -470,7 +470,7 @@ th {
 .portfolio-border {
   border: 100px solid;
   border-image-source: url('./images/wood.jpg');
-  border-image-slice: 49%;
+  border-image-slice: 30 fill;
   pointer-events: none;
   border-image-repeat: round;
     /* add shadow to simulate elevation */
