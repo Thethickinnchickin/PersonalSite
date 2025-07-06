@@ -296,8 +296,8 @@ th {
 
 .moving-background {
   --s: 75px; /* control the size */
-  --c1: #E6D3B3;
-  --c2: #B7DDE9;
+  --c1: #A0A899;
+  --c2: #1D2C20;
   
   --_s: calc(2*var(--s)) calc(2*var(--s));
   --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
