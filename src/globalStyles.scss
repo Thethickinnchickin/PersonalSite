@@ -200,7 +200,7 @@ th {
 
 .container-check {
   width: 100%;
-  height: auto;
+  height: 50px;
   --bg: linear-gradient(
       45deg,
       rgb(0, 0, 0) 25%,
@@ -210,7 +210,7 @@ th {
       rgb(0, 0, 0)
     ),
     linear-gradient(
-      70deg,
+      45deg,
       rgb(0, 0, 0) 25%,
       white 25%,
       white 75%,
