@@ -10,7 +10,8 @@ const Hero: FC = memo(() => {
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
-      <div className="moving-background flex h-screen w-full items-center justify-center">
+      <div className="moving-background flex h-screen w-full items-start justify-center pt-24">
+
         <div className="z-10 max-w-screen-lg px-4 lg:px-6">
           <div className="flex flex-col card container-hero items-center gap-y-6 rounded-xl bg-gray-800 p-6 pt-10 text-center shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-dark sm:text-5xl lg:text-7xl">{name}</h1>
