@@ -21,7 +21,7 @@ const Portfolio: FC = memo(() => {
         muted
         playsInline
       >
-        <source src="/sf6.mp4" type="video/mp4" />
+        <source src="/sf2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
