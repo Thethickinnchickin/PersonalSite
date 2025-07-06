@@ -16,7 +16,7 @@ const Portfolio: FC = memo(() => {
             {/* Video Background */}
       <video
         autoPlay
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        className="absolute top-0 bottom-5 left-0 w-full h-full object-cover -z-10"
         loop
         muted
         playsInline
