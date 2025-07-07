@@ -28,7 +28,7 @@ const Contact: FC = memo(() => {
   return (
     <Section className="readable-text" sectionId={SectionId.Contact}>
       <div className='moving-background'></div>
-      <div className='p-5 container-email'>
+      <div className='container-email'>
         <div className="flex flex-col gap-y-6 md:flex-row md:items-center z-10">
           <EnvelopeIcon className="hidden h-16 w-16 text-white md:block" />
           <h2 className="text-2xl font-bold text-white">{headerText}</h2>
