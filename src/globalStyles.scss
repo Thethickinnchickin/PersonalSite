@@ -512,6 +512,7 @@ th {
   border-image-source: radial-gradient(closest-side, transparent 70%, #1D2C20 70%);
   border-image-slice: 49%;
   pointer-events: none;
+  box-shadow: inset 0px 0px 500px rgb(15, 15, 15);
     /* add shadow to simulate elevation */
   
 }
