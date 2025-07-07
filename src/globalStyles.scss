@@ -300,6 +300,7 @@ th {
 
 .moving-background {
   --s: 75px; /* control the size */
+  position: relative;
   --c1: #A0A899;
   --c2: #1D2C20;
   
@@ -313,17 +314,21 @@ th {
     calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
     conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
      0 0/var(--s) var(--s);
-  animation: m 3s infinite;
+  animation: m 4s infinite;
   background-color: #1d2c202a;
 }
 .moving-background::before {
   content: "";
   position: absolute;
-  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
-  background: rgba(0, 0, 0, 0.15);
-  z-index: 1; /* make sure it's above the background but below content */
-  pointer-events: none; /* let clicks pass through */
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1); /* light tint */
+  backdrop-filter: blur(10px) brightness(1.1); /* the magic */
+  -webkit-backdrop-filter: blur(10px) brightness(1.1); /* for Safari */
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit; /* optional: match corners if rounded */
 }
+
 .trans-back {
   position: absolute; /* <-- key! */
   top: 0;
@@ -542,6 +547,10 @@ th {
   pointer-events: none;
 
     /* add shadow to simulate elevation */
+}
+
+.blended-background {
+  background: linear-gradient(to bottom, #A0A899, #1D2C20);
 }
 
 

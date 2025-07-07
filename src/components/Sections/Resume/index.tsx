@@ -8,7 +8,7 @@ import TimelineItem from './TimelineItem';
 
 const Resume: FC = memo(() => {
   return (
-    <Section className="container-white" sectionId={SectionId.Resume}>
+    <Section className="blended-background" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
         <ResumeSection title="Education">
           {education.map((item, index) => (

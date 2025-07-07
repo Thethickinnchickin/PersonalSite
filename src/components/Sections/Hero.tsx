@@ -13,7 +13,7 @@ const Hero: FC = memo(() => {
       <div className="moving-background flex h-screen w-full items-start justify-center pt-20">
 
         <div className="z-10 max-w-screen-lg px-2 lg:px-2">
-          <div className="flex flex-col card container-hero items-center gap-y-6 rounded-xl bg-gray-800 p-6 pt-10 text-center shadow-lg backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-800 p-6 pt-10 text-center ">
             <h1 className="text-4xl font-bold text-dark sm:text-5xl lg:text-7xl">{name}</h1>
             {description}
             <div className="flex gap-x-4 text-neutral-100 readable-text">
