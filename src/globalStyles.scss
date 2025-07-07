@@ -220,21 +220,21 @@ th {
 }
 
 .container-check::before {
-  // content: "";
-  // width: 100%;
-  // height: 150%;
+  content: "";
+  width: 100%;
+  height: 150%;
 
-  // box-shadow: 0px -100px 500px black, inset 0px 100px 500px rgb(15, 15, 15);
-  // position: absolute;
-  // top: 70%;
+  box-shadow: 0px -100px 500px black, inset 0px 100px 500px rgb(15, 15, 15);
+  position: absolute;
+  top: 70%;
 
-  // background-color: #A0A899;
-  // background-image: var(--bg);
-  // background-size: var(--bgsize);
-  // background-position: var(--bgposition);
+  background-color: #A0A899;
+  background-image: var(--bg);
+  background-size: var(--bgsize);
+  background-position: var(--bgposition);
 
-  // transform-origin: top;
-  // transform: rotateX(90deg);
+  transform-origin: top;
+  transform: rotateX(90deg);
 }
 
 
@@ -322,6 +322,27 @@ th {
     -1.2em -1.5em 7px hsla(180, 100%, 50%, 0.9),
     0.7em -0.8em 7px hsla(240, 100%, 50%, 0.9),
     1.5em 1.4em 7px hsla(300, 100%, 50%, 0.9);
+}
+
+.container-portfolio {
+  width: 100%;
+  height: auto;
+
+  /* Polka dot pattern */
+  // --bg: radial-gradient(#1D2C20 15%, transparent 16%);
+  // --bgsize: 40px 40px;
+  // --bgposition: 0 0;
+
+  //background-color: #A0A899;
+  background-image: var(--bg);
+  background-size: var(--bgsize);
+  background-position: var(--bgposition);
+
+  position: relative;
+  perspective: 750px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 500px rgb(15, 15, 15);
 }
 
 
