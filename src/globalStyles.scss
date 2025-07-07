@@ -203,8 +203,13 @@ th {
   height: auto;
 
   /* Polka dot pattern */
-  --bg: radial-gradient(#A0A899 15%, transparent 16%);
+  --bg: 
+    linear-gradient(45deg, #A0A899 25%, transparent 25%) -20px 0,
+    linear-gradient(-45deg, #A0A899 25%, transparent 25%) -20px 0,
+    linear-gradient(45deg, transparent 75%, #A0A899 75%) -20px 0,
+    linear-gradient(-45deg, transparent 75%, #A0A899 75%) -20px 0;
   --bgsize: 40px 40px;
+
   --bgposition: 0 0;
 
   background-color: #1D2C20;
