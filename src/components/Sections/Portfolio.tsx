@@ -37,7 +37,7 @@ const Portfolio: FC = memo(() => {
       
 
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold fs-3 text-white container-hero larger-text">Check Out Some Of My Work</h2>
+        <h2 className="self-center text-xl font-bold fs-3 text-white container-hero green-text larger-text">Check Out Some Of My Work</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4 ">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
