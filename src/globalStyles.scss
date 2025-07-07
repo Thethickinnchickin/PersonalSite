@@ -52,7 +52,7 @@ body {
 
 .larger-text {
   font-size: xx-large;
-  color: #0f8500;
+  color: #1D2C20;
   font-weight: 900;
   background-color: rgba(0, 0, 0, 0.6); /* opaque dark background */
   padding: 10px 20px;
@@ -509,7 +509,7 @@ th {
 
 .portfolio-border {
   border: 100px solid transparent;
-  border-image-source: radial-gradient(closest-side, transparent 70%, #1D2C20 70%);
+  border-image-source: radial-gradient(closest-side, transparent 70%, #A0A899 70%);
   border-image-slice: 49%;
   pointer-events: none;
 
