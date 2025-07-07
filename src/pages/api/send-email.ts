@@ -10,7 +10,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       service: 'gmail',
       auth: {
         user: 'mattssitemail@gmail.com', // Your email address
-        pass: process.env.NEXT_PUBLIC_APP_PASS, // Your app-specific password
+        pass: process.env.EMAIL_KEY, // Your app-specific password
 
       },
     });
