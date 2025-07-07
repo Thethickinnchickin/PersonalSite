@@ -7,7 +7,7 @@ import Socials from '../Socials';
 const currentYear = new Date().getFullYear();
 
 const Footer: FC = memo(() => (
-  <div className="moving-background relative bg-neutral-900.container-projects px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
+  <div className="moving-background relative  px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
     <div className='trans-back'>
           <div className="absolute inset-x-0 -top-4 flex justify-center sm:-top-6">
       <a
