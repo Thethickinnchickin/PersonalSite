@@ -15,7 +15,8 @@ const Footer: FC = memo(() => (
         href={`/#${SectionId.Hero}`}>
         <ChevronUpIcon className="h-6 w-6 bg-transparent sm:h-8 sm:w-8" />
       </a>
-    </div>
+    </div> 
+    
     <div className="flex flex-col items-center gap-y-6">
       <div className="flex gap-x-4 text-neutral-500">
         <Socials />
