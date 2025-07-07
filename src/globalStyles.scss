@@ -508,14 +508,26 @@ th {
 }
 
 .portfolio-border {
-  /* remove the gradient border */
-  border: none;
-
-  /* if you still need the space around the content, use padding */
+  position: relative;
+  /* instead of border:100px, use padding */
   padding: 100px;
 
-  /* just a shadow for “elevation” */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  pointer-events: none;
-}
+  /* frosted‑glass background */
+  background: rgba(255, 255, 255, 0.1);
 
+  /* blur whatever is behind (the whole box including “border” area) */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  /* soft edge highlight */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  /* rounded corners, adjust to taste */
+  border-radius: 50px;
+
+  /* subtle shadow for depth */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+  /* let clicks pass through to underlying items if needed */
+  pointer-events: none; 
+}
