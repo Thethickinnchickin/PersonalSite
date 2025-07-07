@@ -26,7 +26,7 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
 const Contact: FC = memo(() => {
   const {headerText, description, items} = contact;
   return (
-    <Section className="container-check readable-text" sectionId={SectionId.Contact}>
+    <Section className="container-check readable-text pt-2" sectionId={SectionId.Contact}>
       <div className="flex flex-col gap-y-6 md:flex-row md:items-center">
         <EnvelopeIcon className="hidden h-16 w-16 text-white md:block" />
         <h2 className="text-2xl font-bold text-white">{headerText}</h2>
