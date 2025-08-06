@@ -25,6 +25,7 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
+import porfolioImage13 from '../images/portfolio/portfolio-13.jpg';
 import porfolioImage1 from '../images/portfolio/restaurant-review.png';
 import {
   About,
@@ -212,12 +213,13 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-    {
-    title: 'MatchCraft: AI-Powered Resume & Job Matching Web App',
-    description: 'MatchCraft is a full-stack web application that analyzes your resume against a job description to calculate a match score, highlight matched and missing keywords, and generate a tailored AI-powered cover letter to improve your application.',
-    url: 'https://project-steps-pdam08uei-thethickinnchickins-projects.vercel.app/posts/matchcraft-ai-resume-and-job-description-optimizer',
-    image: porfolioImage12,
+  {
+    title: 'SecureChat: End-to-End Encrypted Web Chat Application',
+    description: 'SecureChat is a real-time web chat application built with Node.js, React, and Socket.IO. It features wallet-based authentication, client-side RSA-OAEP key management, AES-GCM message encryption, dynamic key rotation, and seamless real-time messaging—ensuring that only intended recipients can read your conversations.',
+    url: 'https://project-steps.vercel.app/posts/securechat-a-node-js-and-react-chat-app-with-end-to-end-encryption',
+    image: porfolioImage13,
   },
+
   {
     title: 'Inventory Management System',
     description: 'A system to make sure inventory is being properly tracked and has meaningful display data using Nestjs as a backend and Nextjs as a frontend',
@@ -259,6 +261,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Mock Yelp like review site using ejs and express.',
     url: 'https://project-steps.vercel.app/posts/restaurant-review',
     image: porfolioImage1,
+  },
+  {
+    title: 'MatchCraft: AI-Powered Resume & Job Matching Web App',
+    description: 'MatchCraft is a full-stack web application that analyzes your resume against a job description to calculate a match score, highlight matched and missing keywords, and generate a tailored AI-powered cover letter to improve your application.',
+    url: 'https://project-steps-pdam08uei-thethickinnchickins-projects.vercel.app/posts/matchcraft-ai-resume-and-job-description-optimizer',
+    image: porfolioImage12,
   },
   {
     title: 'Golang Login System',
