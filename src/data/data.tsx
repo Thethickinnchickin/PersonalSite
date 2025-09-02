@@ -122,11 +122,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm Matthew Reiley, but you can call me Matt.
-  Born and raised in the Bay Area, I have been honing my skills as a web developer from designing databases to building frontend designs. I have done it all.
-  For the past 7 years, I have been honing my skills in programming and specifically web development. Beginning with making simple games like Tetris using JavaScript, all the way to creating fully functional e-commerce sites with top-notch security.
-  My goal is to make user-friendly websites that provide pain-free experiences.
-  Have an interesting project? Let's talk.`,
+  description: `I'm Matthew Reiley, but you can call me Matt.  
+    Born and raised in the Bay Area, I specialize in web development with a strong foundation in both frontend and backend technologies.  
+    My expertise spans across building intuitive user interfaces, creating efficient database structures, and ensuring secure, scalable web solutions.  
+    I have a deep understanding of modern programming practices, performance optimization, and responsive design principles to deliver seamless user experiences.  
+    My goal is to combine clean design with robust functionality to create websites that are fast, accessible, and user-friendly.  
+    Have an idea you want to bring to life? Let’s connect.`,
   aboutItems: [
     {label: 'Location', text: 'San Carlos, CA', Icon: MapIcon},
     {label: 'Age', text: '26', Icon: CalendarIcon},
@@ -308,9 +309,15 @@ export const education: TimelineItem[] = [
   {
     date: '2023',
     location: 'San Jose State University - Computer Science',
-    title: "Bachelor's of Science",
-    content: <p>My computer science degree provided me with a strong theoretical foundation, proficiency in programming languages, practical problem-solving skills, database management expertise,
-       and effective teamwork and communication abilities, preparing me for diverse challenges in the field.</p>,
+    title: "Bachelor's of Arts",
+    content: (
+      <p>
+        My psychology degree equipped me with a deep understanding of human behavior, cognitive processes, and emotional development. 
+        I developed strong skills in research methods, data analysis, and critical thinking, as well as the ability to apply psychological principles 
+        in real-world contexts. This foundation allows me to approach problems with empathy, analytical rigor, and an evidence-based mindset.
+      </p>
+    ),
+
   }
 ];
 
